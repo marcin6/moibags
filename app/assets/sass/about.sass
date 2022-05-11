@@ -1,0 +1,32 @@
+@import "variables"
+@import "media-queries"
+    
+.about
+    max-width: 1140px
+    width: 100%
+    margin: 0 auto
+    &__container
+        padding: 100px 5px
+        +min-screen($bp-phone)
+            padding: 100px 40px
+        display: flex
+        flex-direction: column
+        justify-content: center
+        gap: 50px
+        +min-screen($bp-phone)
+            flex-direction: row
+    &__avatar
+        +max-screen($bp-phone)
+            margin: 0 auto
+        max-width: 300px
+        img
+            border-radius: 15px
+            width: 100%
+    &__content
+        h3
+            margin-top: 0
+            font-weight: bold
+            +max-screen($bp-phone)
+                text-align: center
+        p
+            font-size: $font-medias

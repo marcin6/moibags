@@ -1,0 +1,27 @@
+@import "variables"
+@import "media-queries"
+
+body
+    font-family: $font-primary
+    margin: 0
+
+h2
+    font-weight: 300
+    margin: 0
+    font-size: $font-bigger
+    +min-screen($bp-tablet)
+        font-size: $font-biggest
+h3
+    font-size: $font-big
+    font-weight: 300
+    +min-screen($bp-tablet)
+        font-size: $font-bigger
+
+#app  
+    height: 100vh
+    &.app
+        overflow: hidden
+
+    .mainarea
+        &.main__black
+            padding: 65px 20px 0 20px

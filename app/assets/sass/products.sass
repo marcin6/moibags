@@ -1,0 +1,53 @@
+@import "variables"
+@import "media-queries"
+
+.products
+    max-width: 1140px
+    width: 100%
+    margin: 0 auto
+    +max-screen($bp-tablet)
+        margin: 20px auto
+
+.product
+    display: flex
+    flex-wrap: wrap
+    justify-content: center
+    gap: 20px
+    +max-screen($bp-tablet)
+        row-gap: 60px
+    +min-screen($bp-tablet)
+        justify-content: space-between
+        row-gap: 80px
+    .product__element
+        text-align: center
+        max-height: 250px
+        max-width: 250px
+        a
+            text-decoration: none
+            color: unset
+        img
+            border-radius: 15px
+            height: 100%
+            width: 100%
+        p
+            font-size: $font-medium
+            font-weight: bold
+
+.product_details
+    .product_details__container
+        display: flex
+        flex-direction: column
+        text-align: center
+        padding: 0 15px
+        img
+            margin: 0 auto
+            text-align: center
+            border-radius: 15px
+            height: 100%
+            width: 100%
+            +min-screen($bp-tablet)
+                max-height: 400px
+                max-width: 400px
+        p
+            white-space: pre-line
+            font-size: $font-medias
